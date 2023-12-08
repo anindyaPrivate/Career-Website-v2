@@ -15,12 +15,19 @@
     
   </head>  
   <body>
+    {% include 'nav.html' %}
       <div class="container">
        <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
        <img class= "img-fluid" id = "Banner"src= https://careerswebsite--shorts1000every.repl.co/static/Banner.jpg height = "320">
       <h2 class="text-center mt-2 mb-4">About Jovian</h>
-      <p class = "lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis fermentum rutrum. Sed ac turpis eu massa aliquet consectetur non sit amet nisi. Aliquam venenatis, ligula ut malesuada eleifend, nisl lorem convallis sem, eu accumsan justo nulla eget lacus. Aliquam vitae elit vel ante vulputate bibendum id sed velit. Morbi metus nunc, aliquet in viverra ut, dapibus at leo. Sed elementum enim eget rhoncus ornare. Nam urna dui, tempor sit amet sollicitudin ac, iaculis efficitur enim. Sed sagittis ullamcorper eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi ac felis feugiat, ornare lacus at, dignissim urna. Pellentesque justo nulla, condimentum vitae fringilla vitae, maximus vel erat. Pellentesque sed consequat turpis. Sed consectetur tortor lorem, ut porttitor elit lobortis placerat. Sed euismod vulputate diam, eu convallis arcu sagittis id. Nunc libero mi, iaculis a tortor vel, scelerisque cursus purus.
+     <div class = "row" style="margin-bottom:16px">
+       <div class="col-md-6">
+        <p class = "lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis fermentum rutrum. Sed ac turpis eu massa aliquet consectetur non sit amet nisi. Aliquam venenatis, ligula ut malesuada eleifend, nisl lorem convallis sem, eu accumsan justo nulla eget lacus. Aliquam vitae elit vel ante vulputate bibendum id sed velit. Morbi metus nunc, aliquet in viverra ut, dapibus at leo. Sed elementum enim eget rhoncus ornare. Nam urna dui, tempor sit amet sollicitudin ac, iaculis efficitur enim. Sed sagittis ullamcorper eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi ac felis feugiat, ornare lacus at, dignissim urna. Pellentesque justo nulla, condimentum vitae fringilla vitae, maximus vel erat. Pellentesque sed consequat turpis. Sed consectetur tortor lorem, ut porttitor elit lobortis placerat. Sed euismod vulputate diam, eu convallis arcu sagittis id. Nunc libero mi, iaculis a tortor vel, scelerisque cursus purus.
       </p>
+         </div>
+       <div class="d-none d-md-block col-md-6">
+       <img src="/static/Body image.jpg" style="height:320px; border-radius:4px;">
+       </div>
       <h2 class= "text-center mt-2 mb-4">Open Position</h2>
      
         <div>
@@ -29,9 +36,10 @@
           {% endfor %}
           </div>
         <div class="text-center">
-      <button class="btn btn-primary btn-lg">Contact US</button>
-          <p class="mt-4">Copyright 2023,Jovian</p>
+      <a class="btn btn-primary btn-lg" href = mailto:hello@jovian.ai?subject=Question%20about%20job%20openings&body=My%20name%3A%20%3CEnter%20name%3E%0D%0A%0D%0AMy%20questions%3A%20%3Center%20question%20here%3E>Contact US</a>
           </div>
       </div>
+    {% include 'footer.html' %}
+  </body>
     </body>
 </html> 
